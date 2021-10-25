@@ -1,0 +1,26 @@
+$lista-colores: red, blue, green, yellow;
+
+@each $color in $lista-colores {
+    
+    .color-#{color} {
+        background-color: $color;
+    }
+}
+
+$redes: (
+    twitter: #3131d8,
+    facebook: #25257c,
+    instagram: #b860b8,
+);
+
+@each $redes, $color in $redes {
+    .btn--#{$redes} {
+        background-color: $color;
+    }
+}
+
+@each $redes, $color in $redes {
+    .color--#{$redes} {
+        color: $color;
+    }
+}
